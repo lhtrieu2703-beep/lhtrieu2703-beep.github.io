@@ -1,0 +1,31 @@
+{
+  "name": "lhtrieu2703.github.io",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/lhtrieu2703-beep/lhtrieu2703-beep.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/lhtrieu2703-beep/lhtrieu2703-beep.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhtrieu2703-beep/lhtrieu2703-beep.github.io.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  }
+}
