@@ -5,39 +5,109 @@
   <title>My Site</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+  
+  <meta name="title" content="Hoang Trieu's Site">
+  <meta name="description" content="Hi, my name is Hoang Trieu. I'm the Web Developer.">
+  <meta name="keywords" content="web, developer, frontend">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="author" content="Hoang Trieu">
 
-    body,
-    html {
-      height: 100%
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hoang Trieu's Site" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="/avatar.jpg" />
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Hoang Trieu's Site">
+  <meta name="twitter:description" content="Hi, my name is Hoang Trieu. I'm the Web Developer.">
+  <meta name="twitter:image" content="/avatar.jpg">
+  <meta name="twitter:card" content="Hoang Trieu's Site">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Saintlaurent Don 
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
+<!-- banner -->
+<section
+  class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
+  <div class="w-full lg:w-[80%] p-12 text-white">
+    <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+      <span class="banner-text">Hi, my name is <span class="text-teal-400">Hoang Trieu</span></span>
+      <span class="text-white banner-text">I'm the Web Developer.</span>
+    </h1>
+    <a href="#about-me" class="banner-cta uppercase border-2 border-teal-400 p-3 hover:bg-teal-400 hover:text-white transition-colors cursor-pointer">
+      <span class="text-xl pl-8 pr-8 pt-3 pb-3 font-light focus:outline-none focus:ring focus:ring-teal-300">Know more</span>
+    </a>
+  </div>
+</section>
+<!-- banner ./ -->
+
+<!-- about me -->
+<section id="about-me" class="bg-teal-400 min-h-screen w-full flex flex-col justify-center items-center p-4 lg:p-12 text-white">
+  <div class="w-full lg:w-[60%] mb-5">
+    <h2 class="uppercase text-2xl lg:text-5xl text-center font-bold text-white mb-12">About Me</h2>
+    <div class="grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3">
+      <div class="flex justify-center items-center text-center col-span-1">
+        <img class="object-cover max-w-xs lg:w-auto"
+          src="/avatar.jpg"
+          title="Hoang Trieu avatar"
+          alt="Hoang Trieu avatar" />
+      </div>
+      <div class="col-span-1 lg:col-span-2 flex justify-center items-center">
+        <div class="p-0 text-center lg:p-8 lg:text-start">
+          <p class="pb-3 text-lg font-light mb-5">
+            I love programming and web development. My career objective is to become 
+            a professional Web Developer who masters modern technologies and creates 
+            meaningful digital experiences.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+<!-- about me ./ -->
+
+<!-- contact -->
+<section id="contact" class="bg-white min-h-[500px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+  <div class="w-full lg:w-[60%] mb-5">
+    <h2 class="section-title uppercase text-2xl lg:text-5xl text-center font-bold mb-6">Contact</h2>
+    <p class="section-content flex flex-col justify-center items-center pt-5 pb-5 text-center">
+      <span class="text-2xl text-teal-500 mb-3">I LOOK FORWARD TO WORKING WITH YOU!!!</span>
+      <span>I'm so happy that my skills might bring values to you. Let's connect for work</span>
+    </p>
+  </div>
+  <a href="mailto:lhtrieu2703@gmail.com?subject=Hi Hoang Trieu, I want to connect with you for work!"
+    class="border-2 border-teal-400 pl-8 pr-8 pt-3 pb-3 bg-teal-400 text-white hover:bg-white hover:text-teal-400 transition-colors cursor-pointer">
+    <span class="text-xl uppercase font-light focus:outline-none focus:ring focus:ring-teal-300">Send An Email Now</span>
+  </a>
+</section>
+<!-- contact ./ -->
+
+<!-- footer -->
+<footer class="bg-neutral-900 min-h-[300px] pt-12 pb-12 flex flex-row justify-center items-center">
+  <div class="w-[60%] flex flex-col justify-center items-center">
+    <ul class="flex flex-row">
+      <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2 transition-transform">
+        <a href="https://www.linkedin.com/in/ho%C3%A0ng-tri%E1%BB%81u-a7551b406/" target="_blank">
+          <img class="w-10 grayscale hover:grayscale-0" src="/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </li>
+      <li class="pl-4 pr-4 cursor-pointer hover:-translate-y-2 transition-transform">
+        <a href="https://github.com/lhtrieu2703-beep" target="_blank">
+          <img class="w-10 grayscale hover:grayscale-0" src="/github.svg" alt="GitHub" />
+        </a>
+      </li>
+    </ul>
+    <hr class="w-1/2 border-gray-500 mt-10"/>
+    <p class="text-lg text-gray-500 mt-5">©2025 - Hoang Trieu</p>
+  </div>
+</footer>
+<!-- footer ./ -->
+
 </body>
 </html>
-
